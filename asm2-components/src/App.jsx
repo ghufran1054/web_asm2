@@ -4,6 +4,66 @@ import Navbar from "./components/admin/Navbar";
 import ProfileCard from "./components/admin/profileCard";
 import SignUp from "./components/admin/SignupCard";
 import UsagePieChart from "./components/admin/usageChart";
+import BlogCard from "./components/coffee/blogCard";
+import CoffeeCard from "./components/coffee/coffeeCard";
+import Footer from "./components/coffee/Footer";
+import CoffeeGrid from "./components/coffee/Grid";
+const coffeeData = [
+  {
+    name: "Cappuccino",
+    price: 49,
+    description:
+      "Usage of the Internet is becoming more common due to rapid advance.",
+  },
+  {
+    name: "Americano",
+    price: 49,
+    description:
+      "Usage of the Internet is becoming more common due to rapid advance.",
+  },
+  {
+    name: "Espresso",
+    price: 49,
+    description:
+      "Usage of the Internet is becoming more common due to rapid advance.",
+  },
+  {
+    name: "Macchiato",
+    price: 49,
+    description:
+      "Usage of the Internet is becoming more common due to rapid advance.",
+  },
+  {
+    name: "Mocha",
+    price: 49,
+    description:
+      "Usage of the Internet is becoming more common due to rapid advance.",
+  },
+  {
+    name: "Coffee Latte",
+    price: 49,
+    description:
+      "Usage of the Internet is becoming more common due to rapid advance.",
+  },
+  {
+    name: "Piccolo Latte",
+    price: 49,
+    description:
+      "Usage of the Internet is becoming more common due to rapid advance.",
+  },
+  {
+    name: "Ristretto",
+    price: 49,
+    description:
+      "Usage of the Internet is becoming more common due to rapid advance.",
+  },
+  {
+    name: "Affogato",
+    price: 49,
+    description:
+      "Usage of the Internet is becoming more common due to rapid advance.",
+  },
+];
 const data = [
   { name: "Chrome", value: 4306, color: "#4285F4" }, // Blue
   { name: "Firefox", value: 3801, color: "#FBBF24" }, // Yellow
@@ -11,15 +71,25 @@ const data = [
 ];
 
 const profileData = {
-  name: 'Christina Mason',
-  title: 'Lead Developer',
-  skills: ['HTML', 'JavaScript', 'Sass', 'Angular', 'Vue', 'React', 'Redux', 'UI', 'UX'],
-  location: 'San Francisco, CA',
-  workplace: 'GitHub',
-  hometown: 'Boston',
-  website: 'staciehall.co',
-  socialLinks: ['Twitter', 'Facebook', 'Instagram', 'LinkedIn'],
-  imageUrl: 'https://via.placeholder.com/100', // Replace with actual image URL
+  name: "Christina Mason",
+  title: "Lead Developer",
+  skills: [
+    "HTML",
+    "JavaScript",
+    "Sass",
+    "Angular",
+    "Vue",
+    "React",
+    "Redux",
+    "UI",
+    "UX",
+  ],
+  location: "San Francisco, CA",
+  workplace: "GitHub",
+  hometown: "Boston",
+  website: "staciehall.co",
+  socialLinks: ["Twitter", "Facebook", "Instagram", "LinkedIn"],
+  imageUrl: "https://via.placeholder.com/100", // Replace with actual image URL
 };
 const projectsData = [
   {
@@ -54,7 +124,22 @@ function App() {
       {/* <ProjectsTable projects={projectsData}></ProjectsTable> */}
       {/* <UsagePieChart data={data} title="Browser Usage"></UsagePieChart> */}
       {/* <ProfileCard name={profileData.name} title={profileData.title} skills={profileData.skills} location={profileData.location} workplace={profileData.workplace} hometown={profileData.hometown} website={profileData.website} socialLinks={profileData.socialLinks} imageUrl={profileData.imageUrl}></ProfileCard> */}
-      
+      {/* <CoffeeGrid
+        title="What kind of Coffee we serve for you"
+        subtitle="Who are in extremely love with eco friendly system."
+        coffeeList={coffeeData}
+      ></CoffeeGrid> */}
+      {/* <BlogCard
+        imageUrl="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        categories={["Travel", "Life Style"]}
+        title="Portable latest Fashion for young women"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+        date="31st January, 2018"
+      /> */}
+
+      <div style={{height: '100vh'}} className="flex flex-col justify-end">
+      <Footer></Footer>
+      </div>
     </>
   );
 }
