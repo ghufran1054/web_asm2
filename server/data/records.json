@@ -1,0 +1,44 @@
+[
+  {
+    "Name": "New Person",
+    "Title": "Computer Science Student",
+    "TargetedKeywords": [
+      "ML",
+      "DL",
+      "React",
+      "HTML",
+      "CSS"
+    ],
+    "Education": {
+      "Level": "Bachelors",
+      "program": "Computer Science",
+      "Institute": "ITU, Lahore"
+    },
+    "Certification": [
+      "Begginer in Data Science",
+      "Intermediate Python"
+    ],
+    "Contact": "03314136022"
+  },
+  {
+    "Name": "Ghufran",
+    "Title": "Computer Science Student",
+    "TargetedKeywords": [
+      "ML",
+      "DL",
+      "React",
+      "HTML",
+      "CSS"
+    ],
+    "Education": {
+      "Level": "Bachelors",
+      "program": "Computer Science",
+      "Institute": "ITU, Lahore"
+    },
+    "Certification": [
+      "Begginer in Data Science",
+      "Intermediate Python"
+    ],
+    "Contact": "03314136022"
+  }
+]
