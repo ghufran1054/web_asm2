@@ -8,6 +8,25 @@ import BlogCard from "./components/coffee/blogCard";
 import CoffeeCard from "./components/coffee/coffeeCard";
 import Footer from "./components/coffee/Footer";
 import CoffeeGrid from "./components/coffee/Grid";
+import Post from "./components/social/Post";
+import PostInput from "./components/social/PostInput";
+import WeatherCard from "./components/social/WeatherCard";
+
+const postData = {
+  profilePic: "https://via.placeholder.com/40",
+  userName: "John Michael",
+  postTime: "3 hours ago",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+  image: "https://via.placeholder.com/400x200", // Add image URL if needed
+  reactions: [
+    { name: "Like", icon: "https://img.icons8.com/emoji/48/thumbs-up.png" },
+    { name: "Love", icon: "https://img.icons8.com/emoji/48/red-heart.png" },
+    {
+      name: "Haha",
+      icon: "https://img.icons8.com/emoji/48/face-with-tears-of-joy.png",
+    },
+  ],
+};
 const coffeeData = [
   {
     name: "Cappuccino",
@@ -137,9 +156,12 @@ function App() {
         date="31st January, 2018"
       /> */}
 
-      <div style={{height: '100vh'}} className="flex flex-col justify-end">
+      {/* <div style={{height: '100vh'}} className="flex flex-col justify-end">
       <Footer></Footer>
-      </div>
+      </div> */}
+      {/* <PostInput userName="Hello World!"></PostInput>
+      <Post {...postData}></Post> */}
+      <WeatherCard {...{time:"10:30 PM", location:"California, CA", humidity:15, windSpeed:"10km/h", temperature:28}}></WeatherCard>
     </>
   );
 }
