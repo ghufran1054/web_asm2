@@ -1,3 +1,4 @@
+import Calendar from "./components/admin/Calendar";
 import DataCard from "./components/admin/DataCard";
 import ProjectsTable from "./components/admin/LatestProjects";
 import LineChartComponent from "./components/admin/LineChart";
@@ -14,18 +15,18 @@ import Post from "./components/social/Post";
 import PostInput from "./components/social/PostInput";
 import WeatherCard from "./components/social/WeatherCard";
 const LineChartdata = [
-  { name: 'Jan', value: 2000 },
-  { name: 'Feb', value: 1500 },
-  { name: 'Mar', value: 1700 },
-  { name: 'Apr', value: 1800 },
-  { name: 'May', value: 1600 },
-  { name: 'Jun', value: 2100 },
-  { name: 'Jul', value: 2200 },
-  { name: 'Aug', value: 2500 },
-  { name: 'Sep', value: 2800 },
-  { name: 'Oct', value: 3200 },
-  { name: 'Nov', value: 2900 },
-  { name: 'Dec', value: 3000 },
+  { name: "Jan", value: 2000 },
+  { name: "Feb", value: 1500 },
+  { name: "Mar", value: 1700 },
+  { name: "Apr", value: 1800 },
+  { name: "May", value: 1600 },
+  { name: "Jun", value: 2100 },
+  { name: "Jul", value: 2200 },
+  { name: "Aug", value: 2500 },
+  { name: "Sep", value: 2800 },
+  { name: "Oct", value: 3200 },
+  { name: "Nov", value: 2900 },
+  { name: "Dec", value: 3000 },
 ];
 const postData = {
   profilePic: "https://via.placeholder.com/40",
@@ -178,7 +179,8 @@ function App() {
       <Post {...postData}></Post> */}
       {/* <WeatherCard {...{time:"10:30 PM", location:"California, CA", humidity:15, windSpeed:"10km/h", temperature:28}}></WeatherCard> */}
       {/* <Sidebar></Sidebar> */}
-      <LineChartComponent data={LineChartdata} title="Recent Movement" />
+      {/* <LineChartComponent data={LineChartdata} title="Recent Movement" /> */}
+      <Calendar></Calendar>
     </>
   );
 }
